@@ -9,11 +9,15 @@
 
       <% data.forEach((val,index) => { %>
         
-        <li id = "<%= val.id%>"></li>
-          <%= val.title%>
-          <img src="<%= val.img %>" alt="">
-          <p><%= val.content%></p>
-
+        <li id = "<%= val.id%>">
+        <a href="./blog/<%=val.id%>">
+           <img src="<%= val.img %>" alt="">
+          <h3>
+            <%= val.title%>
+          </h3>
+          <p><%= val.summary%></p>
+        </a>
+        </li>
         <% }) %>
     </ul>
     

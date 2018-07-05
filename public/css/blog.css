@@ -1,0 +1,7 @@
+.header-img{
+  height: 350px;
+  overflow: hidden;
+}
+.header-img img {
+  width: 100%;
+}
